@@ -3,33 +3,19 @@ package com.example.realmproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-<<<<<<< HEAD
 
 public class MainActivity extends AppCompatActivity {
 
-=======
-import android.text.TextUtils;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
-
-
-import io.realm.Realm;
-public class MainActivity extends AppCompatActivity {
 
     private EditText cnameedt,cduredt,cdescedt,ctrackedt;
     private Realm realm;
 
     private String cname,cdur,cdesc,ctrack;
 
->>>>>>> f40b878 (Second Commit)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-=======
 
         realm = Realm.getDefaultInstance();
         cnameedt = findViewById(R.id.c_name);
@@ -88,6 +74,5 @@ public class MainActivity extends AppCompatActivity {
                 realm.copyToRealm(model);
             }
         });
->>>>>>> f40b878 (Second Commit)
     }
 }
